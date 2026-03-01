@@ -18,7 +18,6 @@ namespace AppGemini.Converters
 
     public class RoleToBubbleMarginConverter : IValueConverter
     {
-        // Ajusta estos números a tu gusto
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var role = value?.ToString()?.ToLowerInvariant();
