@@ -29,7 +29,7 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <!-- INPUT ABAJO -->
+       
         <StackLayout Grid.Row="1" Spacing="6">
 
             <Entry Text="{Binding InputText}"
