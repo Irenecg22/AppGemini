@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\irene\\Downloads\\IAMaui (1)\\IAMaui\\AppGemini\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE4838BB-967A-D321-98A1-B83544B2F704}|AppGemini.csproj|c:\\users\\irene\\downloads\\iamaui (1)\\iamaui\\appgemini\\services\\speechtotextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE4838BB-967A-D321-98A1-B83544B2F704}|AppGemini.csproj|solutionrelative:services\\speechtotextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE4838BB-967A-D321-98A1-B83544B2F704}|AppGemini.csproj|c:\\users\\irene\\downloads\\iamaui (1)\\iamaui\\appgemini\\views\\chatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE4838BB-967A-D321-98A1-B83544B2F704}|AppGemini.csproj|solutionrelative:views\\chatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpeechToTextService.cs",
+              "DocumentMoniker": "C:\\Users\\irene\\Downloads\\IAMaui (1)\\IAMaui\\AppGemini\\Services\\SpeechToTextService.cs",
+              "RelativeDocumentMoniker": "Services\\SpeechToTextService.cs",
+              "ToolTip": "C:\\Users\\irene\\Downloads\\IAMaui (1)\\IAMaui\\AppGemini\\Services\\SpeechToTextService.cs",
+              "RelativeToolTip": "Services\\SpeechToTextService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T11:00:57.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatView.xaml",
+              "DocumentMoniker": "C:\\Users\\irene\\Downloads\\IAMaui (1)\\IAMaui\\AppGemini\\Views\\ChatView.xaml",
+              "RelativeDocumentMoniker": "Views\\ChatView.xaml",
+              "ToolTip": "C:\\Users\\irene\\Downloads\\IAMaui (1)\\IAMaui\\AppGemini\\Views\\ChatView.xaml",
+              "RelativeToolTip": "Views\\ChatView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-01T11:00:51.499Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 395,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

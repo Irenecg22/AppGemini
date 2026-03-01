@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGemini.Views.ChatView"
+             Title="Gemini">
+
+    <Grid Padding="15"
+          RowDefinitions="*,Auto,Auto"
+          RowSpacing="12">
+
+        <CollectionView Grid.Row="0"
+                        ItemsSource="{Binding Messages}"
+                        VerticalOptions="FillAndExpand">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="12"
+                            StrokeThickness="0"
+                            BackgroundColor="{Binding Role, Converter={StaticResource RoleToBubbleColorConverter}}"
+                            HorizontalOptions="{Binding Role, Converter={StaticResource RoleToBubbleAlignConverter}}"
+                            Margin="{Binding Role, Converter={StaticResource RoleToBubbleMarginConverter}}"
+                            MaximumWidthRequest="500">
+
+                        <Label Text="{Binding Text}"
+                               LineBreakMode="WordWrap"
+                               TextColor="{Binding Role, Converter={StaticResource RoleToTextColorConverter}}" />
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- INPUT ABAJO -->
+        <StackLayout Grid.Row="1" Spacing="6">
+
+            <Entry Text="{Binding InputText}"
+                   Placeholder="Escribe aquí tu pregunta..." />
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                  ColumnSpacing="10">
+
+                <Button Grid.Column="0"
+                        Text="Hablar"
+                        Command="{Binding ListenCommand}"
+                        BackgroundColor="LightPink" />
+
+                <ActivityIndicator Grid.Column="1"
+                                   HorizontalOptions="Center"
+                                   IsRunning="{Binding IsBusy}"
+                                   IsVisible="{Binding IsBusy}" />
+
+                <Button Grid.Column="2"
+                        Text="Enviar"
+                        Command="{Binding SendCommand}"
+                        BackgroundColor="LightPink" />
+            </Grid>
+        </StackLayout>
+
+        
+        <HorizontalStackLayout Grid.Row="2"
+                               HorizontalOptions="End"
+                               Spacing="15">
+
+            <Button Text="Leer"
+                    Command="{Binding SpeakLastCommand}" 
+                    BackgroundColor="HotPink"/>
+
+            <Button Text="Cancelar"
+                    Command="{Binding CancelCommand}"
+                    BackgroundColor="HotPink"/>
+
+        </HorizontalStackLayout>
+
+    </Grid>
+</ContentPage>
