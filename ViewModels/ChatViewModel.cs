@@ -10,7 +10,7 @@ public partial class ChatViewModel : ObservableObject
 {
     private readonly GeminiService _gemini;
     private readonly SpeechService _speech;
-    private readonly SpeechToTextService _stt;   // ✅ AÑADIR
+    private readonly SpeechToTextService _stt;  
 
     private CancellationTokenSource? _requestCts;
 
@@ -25,9 +25,9 @@ public partial class ChatViewModel : ObservableObject
     public IRelayCommand SendCommand { get; }
     public IRelayCommand CancelCommand { get; }
     public IRelayCommand SpeakLastCommand { get; }
-    public IRelayCommand ListenCommand { get; } // ✅ AÑADIR
+    public IRelayCommand ListenCommand { get; } 
 
-    public ChatViewModel(GeminiService gemini, SpeechService speech, SpeechToTextService stt) // ✅ AÑADIR stt
+    public ChatViewModel(GeminiService gemini, SpeechService speech, SpeechToTextService stt) 
     {
         _gemini = gemini;
         _speech = speech;
@@ -37,7 +37,7 @@ public partial class ChatViewModel : ObservableObject
         CancelCommand = new RelayCommand(Cancel);
         SpeakLastCommand = new AsyncRelayCommand(SpeakLastAsync);
 
-        ListenCommand = new AsyncRelayCommand(ListenAsync, () => !IsBusy); // ✅ AÑADIR
+        ListenCommand = new AsyncRelayCommand(ListenAsync, () => !IsBusy);
     }
 
     private async Task SendAsync()
@@ -72,11 +72,11 @@ public partial class ChatViewModel : ObservableObject
         {
             IsBusy = false;
             (SendCommand as AsyncRelayCommand)?.NotifyCanExecuteChanged();
-            (ListenCommand as AsyncRelayCommand)?.NotifyCanExecuteChanged(); // ✅
+            (ListenCommand as AsyncRelayCommand)?.NotifyCanExecuteChanged(); 
         }
     }
 
-    private async Task ListenAsync() // ✅ AÑADIR
+    private async Task ListenAsync() 
     {
         _requestCts?.Cancel();
         _requestCts = new CancellationTokenSource();
