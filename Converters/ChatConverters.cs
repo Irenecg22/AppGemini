@@ -23,8 +23,6 @@ namespace AppGemini.Converters
         {
             var role = value?.ToString()?.ToLowerInvariant();
 
-            // usuario -> margen grande a la izquierda (para que la burbuja no ocupe todo)
-            // modelo -> margen grande a la derecha
             return role == "user"
                 ? new Thickness(80, 4, 0, 4)
                 : new Thickness(0, 4, 80, 4);
@@ -40,10 +38,9 @@ namespace AppGemini.Converters
         {
             var role = value?.ToString()?.ToLowerInvariant();
 
-            // Cambia colores si quieres
             return role == "user"
-                ? Color.FromArgb("#5B4BFF")   // moradito para user
-                : Color.FromArgb("#2B2F36");  // gris oscuro para model
+                ? Color.FromArgb("#5B4BFF")   
+                : Color.FromArgb("#2B2F36");
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
